@@ -1,3 +1,7 @@
 {
+  "main": "Test.js",
+  "scripts": {
+    "start": "node ."
+  },
   "type": "module"
 }

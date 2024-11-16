@@ -6,6 +6,10 @@ function isSorted(array) {
   }
   return true;
 }
+function isSameElement(originArr, sortedArr) {
+  const originSorted = originArr.sort((a, b) => a -b).toString();
+  return originSorted === sortedArr.toString();
+}
 
 function testAlgorithm(fn, target) {
   try {
@@ -14,7 +18,7 @@ function testAlgorithm(fn, target) {
     const endTime = performance.now(); // 종료 시간
     const elapsedTime = endTime - startTime;
     
-    const status = isSorted(sorted);
+    const status = isSorted(sorted) && isSameElement(target, sorted);
     return {status: status, elapsedTime: elapsedTime};
   } catch (e) {
     console.error(`${e}\n유효하지 않은 함수 및 매개변수`);

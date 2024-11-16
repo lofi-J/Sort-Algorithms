@@ -12,12 +12,12 @@ const nearlySortedArray = [1, 2, 3, 7, 5, 4, 6, 8, 9, 10];
 const mixedArray = [12, -5, 0, 7, -3, 9, -15, 4, -8, 3];
 
 const testDatas = [
-  { name: "randomArray", data: randomArray },
-  { name: "sortedArray", data: sortedArray },
-  { name: "reversedArray", data: reversedArray },
-  { name: "duplicateArray", data: duplicateArray },
-  { name: "nearlySortedArray", data: nearlySortedArray },
-  { name: "mixedArray", data: mixedArray },
+  { name: "randomArray", data: [...randomArray] },
+  { name: "sortedArray", data: [...sortedArray] },
+  { name: "reversedArray", data: [...reversedArray] },
+  { name: "duplicateArray", data: [...duplicateArray] },
+  { name: "nearlySortedArray", data: [...nearlySortedArray] },
+  { name: "mixedArray", data: [...mixedArray] },
 ];
 
 const test = (algo, name) => {
